@@ -38,17 +38,23 @@ struct Plik {
 	int ilosc_linijek_kodu;
 	std::vector<Polaczenie> polaczenia_miedzy_plikami;
 	std::vector<Funkcja> funkcje;
-	Plik(std::string);
+	Plik(std::string a){
+		nazwa_pliku =a;
+	}
 };
 
 struct Polaczenie {
 	std::string nazwa_polaczonego_elementu;
 	int waga;   //zalezne od liczby wywolan funkcji
-	Polaczenie(std::string);
+	Polaczenie(std::string a){
+		nazwa_polaczonego_elementu =a;
+	}
 };
 
 struct Funkcja {
 	std::string nazwa_funkcji;
 	std::vector<Polaczenie> polaczenia_miedzy_funkcjami;
-	Funkcja(std::string);
+	Funkcja(std::string a){
+		nazwa_funkcji =a;
+	}
 };
