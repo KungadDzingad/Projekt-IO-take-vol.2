@@ -24,7 +24,7 @@ void Graf::znajdz_polaczenia_pomiedzy_plikami()
 			//warunek jest spełniony jeśli znajdzie include w linii 
 			if (linia.find("include \"") != string::npos)
 			{
-				//Wymazanie cudzysłowu na końcu includa
+				//Wymazanie cudzysłowie na końcu includa
 				linia.erase(linia.size() - 1, linia.size());
 				//Wymazanie pierwszych 10 znakow (include i ")  
 				linia.erase(0, 10);
