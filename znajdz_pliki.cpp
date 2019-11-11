@@ -30,7 +30,7 @@ void Graf::znajdz_pliki()
 			pliki.push_back(obiekt);
 		} 
 	}
-	//usuwamy uchwyt
+	//odczepiamy uchwyt
 	_findclose(uchwyt);
 
 	//======================================================Wykonujemy to samo w poszukiwaniu plików .h
@@ -54,7 +54,7 @@ void Graf::znajdz_pliki()
 			pliki.push_back(obiekt);
 		}
 	}
-	//usuwamy uchwyt
+	//odczepiamy uchwyt
 	_findclose(uchwyt);
 
 /*
