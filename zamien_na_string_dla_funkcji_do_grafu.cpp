@@ -28,7 +28,6 @@ std::string Graf::zamien_na_string_dla_funkcji_do_grafu()
 
 	tekst = poczatek + temp + "}";		//zawsze zamykajcie nawiasy klamrowe :D
 
-	std::cout << "===========ZLOTOWSLOSY WILKUS===================" << std::endl;
-	std::cout << tekst;
+	std::cout << tekst; 		//tescik
 	return tekst;
 }
