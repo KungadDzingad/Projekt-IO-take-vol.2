@@ -36,8 +36,8 @@ std::string Graf::zamien_na_string_dla_plikow_do_grafu()
 				ss3.clear();
 
 				temp += "\"" + pliki[i].nazwa_pliku + "(" + ilosc_lini_pierwszego_pliku + ")\"" + strzala + "\"" + pliki[j].nazwa_pliku + "(" + ilosc_linii_drugiego_pliku + ")\"" + "[ label = \"" + sila_polaczenia + "\" ];\n";
-				
-			
+
+
 			}
 		}
 

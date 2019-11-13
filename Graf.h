@@ -62,7 +62,7 @@ public:
 
 	//dla kazdej Funkcji dodaje polaczenia do vecota Funkcja::polaczenia_miedzy_funkcjami (nazwy polaczonych funkcji)
 	void znajdz_polaczenia_miedzy_funkcjami();                 //                          || -> Matuesz Witkowski i Wojtek
-	                                           
+
 
 	std::string zamien_na_string_dla_plikow_do_grafu();  //                                || -> Matuesz Wicherski
 	std::string zamien_na_string_dla_funkcji_do_grafu(); //do skopiowania i prxerobienia   || -> Matuesz Wicherski

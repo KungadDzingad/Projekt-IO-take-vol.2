@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include <iostream>
 #include <io.h>
@@ -11,20 +11,20 @@ void Graf::znajdz_pliki()
 {
 	//struktura _findata przechowuje informacje o znalezionym pliku
 	_finddata_t danePliku;
-	//w przypadku powodzenia _findfirst zwraca uchwyt identyfikuj¹cy poszukiwan¹ grupê plików (wykoszystyane potem)
+	//w przypadku powodzenia _findfirst zwraca uchwyt identyfikujÂ¹cy poszukiwanÂ¹ grupÃª plikÃ³w (wykoszystyane potem)
 	long uchwyt = _findfirst("*.cpp", &danePliku);
 
-	//jeœli uchywyt == -1 to znaczy ¿e nic nie znalaz³
+	//jeÂœli uchywyt == -1 to znaczy Â¿e nic nie znalazÂ³
 	if (uchwyt != -1)
 	{
-		//przypisujemy do naszego wektora nazwe pierwszej pobranej strukuty za pomoc¹ _findfirst w tym celu tworzymy obiekt Plik
+		//przypisujemy do naszego wektora nazwe pierwszej pobranej strukuty za pomocÂ¹ _findfirst w tym celu tworzymy obiekt Plik
 		Plik obiekt(danePliku.name);
 		pliki.push_back(obiekt);
 
-		//jeœli _findnext niczego nie znajduje to zwraca -1 dla tego ten warunek
+		//jeÂœli _findnext niczego nie znajduje to zwraca -1 dla tego ten warunek
 		while (_findnext(uchwyt, &danePliku) != -1)
 		{
-			//przypisujemy do naszego wektora nazwe kolejnej pobranej strukuty za pomoc¹ _findnext w tym celu tworzymy obiekt Plik
+			//przypisujemy do naszego wektora nazwe kolejnej pobranej strukuty za pomocÂ¹ _findnext w tym celu tworzymy obiekt Plik
 			Plik obiekt(danePliku.name);
 			pliki.push_back(obiekt);
 		}
@@ -32,23 +32,23 @@ void Graf::znajdz_pliki()
 	//odczepiamy uchwyt
 	_findclose(uchwyt);
 
-	//======================================================Wykonujemy to samo w poszukiwaniu plików .h
+	//======================================================Wykonujemy to samo w poszukiwaniu plikÃ³w .h
 
-	//w przypadku powodzenia _findfirst zwraca uchwyt identyfikuj¹cy poszukiwan¹ grupê plików (wykoszystyane potem)
+	//w przypadku powodzenia _findfirst zwraca uchwyt identyfikujÂ¹cy poszukiwanÂ¹ grupÃª plikÃ³w (wykoszystyane potem)
 	uchwyt = _findfirst("*.h", &danePliku);
 
-	//jeœli uchywyt == -1 to znaczy ¿e nic nie znalaz³
+	//jeÂœli uchywyt == -1 to znaczy Â¿e nic nie znalazÂ³
 	if (uchwyt != -1)
 	{
 
-		//przypisujemy do naszego wektora nazwe pierwszej pobranej strukuty za pomoc¹ _findfirst w tym celu tworzymy obiekt Plik
+		//przypisujemy do naszego wektora nazwe pierwszej pobranej strukuty za pomocÂ¹ _findfirst w tym celu tworzymy obiekt Plik
 		Plik obiekt(danePliku.name);
 		pliki.push_back(obiekt);
 
-		//jeœli _findnext niczego nie znajduje to zwraca -1 dla tego ten warunek
+		//jeÂœli _findnext niczego nie znajduje to zwraca -1 dla tego ten warunek
 		while (_findnext(uchwyt, &danePliku) != -1)
 		{
-			//przypisujemy do naszego wektora nazwe kolejnej pobranej strukuty za pomoc¹ _findnext w tym celu tworzymy obiekt Plik
+			//przypisujemy do naszego wektora nazwe kolejnej pobranej strukuty za pomocÂ¹ _findnext w tym celu tworzymy obiekt Plik
 			Plik obiekt(danePliku.name);
 			pliki.push_back(obiekt);
 		}
@@ -56,13 +56,13 @@ void Graf::znajdz_pliki()
 	//odczepiamy uchwyt
 	_findclose(uchwyt);
 
-	
-		//sprawdzanie(wypisanie)
 
-	/*	for (int i = 0; i < pliki.size(); i++)
-		{
-			cout << pliki[i].nazwa_pliku << endl;
-		}*/
-	
+	//sprawdzanie(wypisanie)
+
+/*	for (int i = 0; i < pliki.size(); i++)
+	{
+		cout << pliki[i].nazwa_pliku << endl;
+	}*/
+
 
 }

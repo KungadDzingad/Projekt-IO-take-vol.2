@@ -21,8 +21,11 @@ std::string Graf::zamien_na_string_dla_funkcji_do_grafu()
 
 				waga_polaczenia << wszystkie_funkcje_we_wszystkich_plikach[i].polaczenia_miedzy_funkcjami[j].waga;
 				std::string sila_polaczenia = waga_polaczenia.str();
+				
 
 				temp += "\"" + wszystkie_funkcje_we_wszystkich_plikach[i].nazwa_funkcji + "\"" + strzalka + "\"" + wszystkie_funkcje_we_wszystkich_plikach[j].nazwa_funkcji + "\"" + "[ label = \"" + sila_polaczenia + "\" ];\n";
+				waga_polaczenia.str("");
+				waga_polaczenia.clear();
 			}
 		}
 	}
