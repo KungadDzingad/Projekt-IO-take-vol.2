@@ -1,10 +1,47 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include <fstream>
+#include <string>
+
+
 
 using namespace std;
 //NIGDY NIE UZYWAMY DWA RAZY FUNKCJI W JEDNEJ LINII BO SIE SPIERDOLI
+
+struct Polaczenie {
+	std::string nazwa_polaczonego_elementu;
+	int waga;   //zalezne od liczby wywolan funkcji
+	Polaczenie(std::string a) {
+		nazwa_polaczonego_elementu = a;
+		waga = 1;
+	}
+};
+
+struct Funkcja {
+	std::string nazwa_funkcji;
+	std::vector<Polaczenie> polaczenia_miedzy_funkcjami;
+	Funkcja(std::string a) {
+		nazwa_funkcji = a;
+		polaczenia_miedzy_funkcjami = {};
+	}
+};
+
+struct Plik {
+	std::string nazwa_pliku;
+	int ilosc_linijek_kodu;
+	std::vector<Polaczenie> polaczenia_miedzy_plikami;
+	std::vector<Funkcja> funkcje;
+	Plik(std::string a) {
+		nazwa_pliku = a;
+		polaczenia_miedzy_plikami = {};
+		funkcje = {};
+		ilosc_linijek_kodu = 0;
+	}
+};
+
 class Graf {
+public:
 	std::vector<Funkcja> wszystkie_funkcje_we_wszystkich_plikach;
 	std::vector<Plik> pliki;
 
@@ -24,37 +61,12 @@ class Graf {
 	void znajdz_funkcje_i_wagi_pomiedzy_plikami();//                                       || -> Bartek
 
 	//dla kazdej Funkcji dodaje polaczenia do vecota Funkcja::polaczenia_miedzy_funkcjami (nazwy polaczonych funkcji)
-	void znajdz_polaczenia_miedzy_funkcjami();                 //                          || -> Matuesz Witkowski
-	//dodaje do vecotra z Polaczeniami w Funkcji polaczenia_miedzy_funkcjami.waga
-	void znajdz_wagi_pomiedzy_funkcjami(); //                                              || -> Matuesz Witkowski
+	void znajdz_polaczenia_miedzy_funkcjami();                 //                          || -> Matuesz Witkowski i Wojtek
+	                                           
 
 	std::string zamien_na_string_dla_plikow_do_grafu();  //                                || -> Matuesz Wicherski
 	std::string zamien_na_string_dla_funkcji_do_grafu(); //do skopiowania i prxerobienia   || -> Matuesz Wicherski
-	void rysuj_graf(std::string do_rysowania_grafu, std::string nazwa_grafu);//GOTOWE      || -> Matuesz Wich i Wojtek
+	void rysuj_graf(std::string do_rysowania_grafu, std::string nazwa_pliku);//GOTOWE      || -> Matuesz Wich i Wojtek
 };
 
-struct Plik {
-	std::string nazwa_pliku;
-	int ilosc_linijek_kodu;
-	std::vector<Polaczenie> polaczenia_miedzy_plikami;
-	std::vector<Funkcja> funkcje;
-	Plik(std::string a){
-		nazwa_pliku =a;
-	}
-};
 
-struct Polaczenie {
-	std::string nazwa_polaczonego_elementu;
-	int waga;   //zalezne od liczby wywolan funkcji
-	Polaczenie(std::string a){
-		nazwa_polaczonego_elementu =a;
-	}
-};
-
-struct Funkcja {
-	std::string nazwa_funkcji;
-	std::vector<Polaczenie> polaczenia_miedzy_funkcjami;
-	Funkcja(std::string a){
-		nazwa_funkcji =a;
-	}
-};
