@@ -1,5 +1,4 @@
-﻿#pragma once
-
+#pragma once
 #include "Graf.h"
 #include <iostream>
 #include <fstream>
@@ -21,12 +20,13 @@ void Graf::znajdz_polaczenia_miedzy_funkcjami() {
 							if (pliki[aktualny_plik].funkcje[0].polaczenia_miedzy_funkcjami.size() == licznik) {
 								Polaczenie temp(wszystkie_funkcje_we_wszystkich_plikach[sprawdzana_fun].nazwa_funkcji);
 								pliki[aktualny_plik].funkcje[0].polaczenia_miedzy_funkcjami.push_back(temp);
-								std::cout << "dupa" << std::endl;
+								std::cout << "raz" << std::endl;
 								std::cout << licznik << " " << pliki[aktualny_plik].funkcje[0].polaczenia_miedzy_funkcjami.size() << std::endl;
+
 							}
 							else {
 								pliki[aktualny_plik].funkcje[0].polaczenia_miedzy_funkcjami[licznik].waga += 1;
-								std::cout << "cycki" << std::endl;
+								std::cout << "wiecej niz raz" << std::endl;
 							}
 						}
 					}
@@ -43,12 +43,12 @@ void Graf::znajdz_polaczenia_miedzy_funkcjami() {
 				wszystkie_funkcje_we_wszystkich_plikach[i].polaczenia_miedzy_funkcjami = pliki[aktualny_plik].funkcje[0].polaczenia_miedzy_funkcjami;
 			}
 		}
-		
+
 	}
-	for (int i = 0; i < wszystkie_funkcje_we_wszystkich_plikach.size(); i++) {
+	/*for (int i = 0; i < wszystkie_funkcje_we_wszystkich_plikach.size(); i++) {
 		std::cout << wszystkie_funkcje_we_wszystkich_plikach[i].nazwa_funkcji << " : " << std::endl;
 		for (int j = 0; j < wszystkie_funkcje_we_wszystkich_plikach[i].polaczenia_miedzy_funkcjami.size(); j++) {
-			std::cout << "      " << wszystkie_funkcje_we_wszystkich_plikach[i].polaczenia_miedzy_funkcjami[j].nazwa_polaczonego_elementu <<" "<<wszystkie_funkcje_we_wszystkich_plikach[i].polaczenia_miedzy_funkcjami[j].waga<<std::endl;
+			std::cout << "      " << wszystkie_funkcje_we_wszystkich_plikach[i].polaczenia_miedzy_funkcjami[j].nazwa_polaczonego_elementu << " " << wszystkie_funkcje_we_wszystkich_plikach[i].polaczenia_miedzy_funkcjami[j].waga << std::endl;
 		}
-	}
+	}*/
 }

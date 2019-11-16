@@ -11,9 +11,10 @@ int main() {
 	program->znajdz_funkcje_i_wagi_pomiedzy_plikami();
 	program->znajdz_polaczenia_miedzy_funkcjami();
 	std::string graf_pliki = program->zamien_na_string_dla_plikow_do_grafu();
-	//std::string graf_funkcje = program->zamien_na_string_dla_funkcji_do_grafu();
+	std::string graf_funkcje = program->zamien_na_string_dla_funkcji_do_grafu();
 	program->rysuj_graf(graf_pliki, "graf_plikow");
-	//program->rysuj_graf(graf_funkcje, "graf_funkcji");
+	program->rysuj_graf(graf_funkcje, "graf_funkcji");
 	delete program;
+	system("Pause");
 	return 0;
 }
