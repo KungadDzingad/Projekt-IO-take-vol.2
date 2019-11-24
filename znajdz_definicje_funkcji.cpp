@@ -4,10 +4,10 @@
 
 void Graf::znajdz_definicje_funkcji() {
 	std::fstream plik_operacyjny;
-	for (auto ktory_plik = pliki.begin(); ktory_plik != pliki.end(); ktory_plik++/*size_t ktory_plik = 0; ktory_plik < pliki.size(); ktory_plik++*/) {
+	for (auto &_ktory_plik : pliki) {
 		std::string linia;
 		std::string slowo = "";
-		plik_operacyjny.open(ktory_plik->nazwa_pliku, std::ios::in);
+		plik_operacyjny.open(_ktory_plik.nazwa_pliku, std::ios::in);
 		while (!plik_operacyjny.eof()) {
 			getline(plik_operacyjny, linia);
 			
@@ -20,12 +20,12 @@ void Graf::znajdz_definicje_funkcji() {
 					if (nazwa.find("::") != std::string::npos) {
 						nazwa = odcinanie_poczatku(nazwa, "::");
 					}
-					ktory_plik->funkcje.push_back(nazwa);
+					_ktory_plik.funkcje.push_back(nazwa);
 
 					unsigned int licznik_spr = 0;
 					//za pomoca tego licznika sprawdzam, ilosc NIEwystepowania tej nazwy w vectorze, przez co wiadomo kiedy push_backowac
-					for (auto nr_funkcji = wszystkie_funkcje_we_wszystkich_plikach.begin(); nr_funkcji != wszystkie_funkcje_we_wszystkich_plikach.end(); nr_funkcji++) {
-						if (nazwa != nr_funkcji->nazwa_funkcji)
+					for (auto &nr_funkcji : wszystkie_funkcje_we_wszystkich_plikach) {
+						if (nazwa != nr_funkcji.nazwa_funkcji)
 							licznik_spr++;
 					}
 					
