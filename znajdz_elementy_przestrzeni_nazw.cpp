@@ -1,7 +1,7 @@
 #pragma once
 #include "Graf.h"
 
-std::vector<std::string> slowa_kluczowe = { "int","vector", "std::string", "float", "void" };
+std::vector<std::string> slowa_kluczowe = { "int","vector", "std::string", "float", "void","string" };
 
 void Graf::znajdz_elementy_przestrzeni_nazw() {
 	for (int nr_przestrzeni = 0; nr_przestrzeni < przestrzenie_nazw.size(); nr_przestrzeni++) {
@@ -67,7 +67,7 @@ void Graf::znajdz_elementy_przestrzeni_nazw() {
 													//break;
 											}
 											else {
-												nazwa_slowa = slowa_w_linii[aktualne_slowo];																		// licznik sluzy do sprawdzania powtarzania naz
+												nazwa_slowa = slowa_w_linii[aktualne_slowo];							// licznik sluzy do sprawdzania powtarzania nazw
 											}
 
 											//za pomoca licznika sprawdza wystepowanie nazwy w vectorze
