@@ -61,7 +61,6 @@ void Graf::znajdz_polaczenia_miedzy_funkcjami() {
 						}
 						otwarty_plik.close();
 					}
-					otwarty_plik.close();
 				}
 			}
 

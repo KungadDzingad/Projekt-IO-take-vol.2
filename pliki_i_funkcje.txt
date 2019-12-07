@@ -1,0 +1,97 @@
+dzielenie_na_slowa.cpp(18)->Funkcje_od_stringow.h(12) : [1]
+Funkcje_do_stringow.cpp(39)->Funkcje_od_stringow.h(12) : [1]
+main.cpp(42)->Graf.h(102) : [1]
+main.cpp(42)->menu.h(4) : [1]
+menu.cpp(75)->menu.h(4) : [1]
+policz_linijki_kodu.cpp(29)->Graf.h(102) : [1]
+przygotuj_txt_dla_paradigma.cpp(144)->Graf.h(102) : [1]
+rysuj_graf.cpp(38)->Graf.h(102) : [1]
+string_dla_funkcji_i_modulu.cpp(36)->Graf.h(102) : [1]
+string_dla_modulu.cpp(29)->Graf.h(102) : [1]
+string_dla_plikow_i_funkcji.cpp(39)->Graf.h(102) : [1]
+string_funkcje_do_grafu.cpp(41)->Graf.h(102) : [1]
+string_pliki_do_grafu.cpp(59)->Graf.h(102) : [1]
+znajdz_definicje_funkcji.cpp(60)->Graf.h(102) : [1]
+znajdz_elementy_przestrzeni_nazw.cpp(103)->Graf.h(102) : [1]
+znajdz_funkcje_i_wagi_pomiedzy_plikami.cpp(27)->Graf.h(102) : [1]
+znajdz_pliki.cpp(72)->Graf.h(102) : [1]
+znajdz_polaczenia_miedzy_funkcjami.cpp(82)->Graf.h(102) : [1]
+znajdz_polaczenia_pomiedzy_plikami.cpp(63)->Graf.h(102) : [1]
+znajdz_przestrzenie_nazw.cpp(56)->Graf.h(102) : [1]
+Graf.h(102)->Funkcje_od_stringow.h(12) : [1]
+main->menu : [1]
+main->policz_linijki_kodu_dla_pliku : [1]
+main->przygotuj_txt_dla_funkcji_do_visual_paradigma : [1]
+main->przygotuj_txt_dla_plikow_do_visual_paradigma : [1]
+main->przygotuj_txt_dla_plikow_i_funkcji_do_visual_paradigma : [1]
+main->rysuj_graf : [4]
+main->zamien_na_string_dla_plikow_z_modulem_do_grafu : [1]
+main->zamien_na_string_dla_modulu : [1]
+main->string_dla_plikow_i_funkcji : [1]
+main->zamien_na_string_dla_funkcji_do_grafu : [1]
+main->zamien_na_string_dla_plikow_do_grafu : [1]
+main->znajdz_definicje_funkcji : [1]
+main->znajdz_elementy_przestrzeni_nazw : [1]
+main->znajdz_funkcje_i_wagi_pomiedzy_plikami : [1]
+main->znajdz_pliki : [1]
+main->znajdz_polaczenia_miedzy_funkcjami : [1]
+main->znajdz_polaczenia_pomiedzy_plikami : [1]
+main->znajdz_przestrzenie_nazw : [1]
+znajdz_definicje_funkcji->dzielenie_na_slowa : [1]
+znajdz_definicje_funkcji->odcinanie_koncowki : [1]
+znajdz_definicje_funkcji->odcinanie_poczatku : [1]
+znajdz_definicje_funkcji->usuwanie_tabulacji : [1]
+znajdz_elementy_przestrzeni_nazw->dzielenie_na_slowa : [1]
+znajdz_elementy_przestrzeni_nazw->odcinanie_koncowki : [1]
+znajdz_elementy_przestrzeni_nazw->usuwanie_tabulacji : [2]
+znajdz_polaczenia_miedzy_funkcjami->dzielenie_na_slowa : [1]
+znajdz_przestrzenie_nazw->dzielenie_na_slowa : [1]
+znajdz_przestrzenie_nazw->odcinanie_koncowki : [2]
+znajdz_przestrzenie_nazw->usuwanie_tabulacji : [1]
+dzielenie_na_slowa.cpp(18)"->"dzielenie_na_slowa : 
+Funkcje_do_stringow.cpp(39)"->"dzielenie_na_slowa : 
+Funkcje_do_stringow.cpp(39)"->"odcinanie_koncowki : 
+Funkcje_do_stringow.cpp(39)"->"odcinanie_poczatku : 
+Funkcje_do_stringow.cpp(39)"->"usuwanie_tabulacji : 
+main.cpp(42)"->"main : 
+menu.cpp(75)"->"menu : 
+policz_linijki_kodu.cpp(29)"->"policz_linijki_kodu_dla_pliku : 
+przygotuj_txt_dla_paradigma.cpp(144)"->"przygotuj_txt_dla_funkcji_do_visual_paradigma : 
+przygotuj_txt_dla_paradigma.cpp(144)"->"przygotuj_txt_dla_plikow_do_visual_paradigma : 
+przygotuj_txt_dla_paradigma.cpp(144)"->"przygotuj_txt_dla_plikow_i_funkcji_do_visual_paradigma : 
+rysuj_graf.cpp(38)"->"rysuj_graf : 
+string_dla_funkcji_i_modulu.cpp(36)"->"zamien_na_string_dla_plikow_z_modulem_do_grafu : 
+string_dla_modulu.cpp(29)"->"zamien_na_string_dla_modulu : 
+string_dla_plikow_i_funkcji.cpp(39)"->"string_dla_plikow_i_funkcji : 
+string_funkcje_do_grafu.cpp(41)"->"zamien_na_string_dla_funkcji_do_grafu : 
+string_pliki_do_grafu.cpp(59)"->"zamien_na_string_dla_plikow_do_grafu : 
+znajdz_definicje_funkcji.cpp(60)"->"znajdz_definicje_funkcji : 
+znajdz_elementy_przestrzeni_nazw.cpp(103)"->"znajdz_elementy_przestrzeni_nazw : 
+znajdz_funkcje_i_wagi_pomiedzy_plikami.cpp(27)"->"znajdz_funkcje_i_wagi_pomiedzy_plikami : 
+znajdz_pliki.cpp(72)"->"znajdz_pliki : 
+znajdz_polaczenia_miedzy_funkcjami.cpp(82)"->"znajdz_polaczenia_miedzy_funkcjami : 
+znajdz_polaczenia_pomiedzy_plikami.cpp(63)"->"znajdz_polaczenia_pomiedzy_plikami : 
+znajdz_przestrzenie_nazw.cpp(56)"->"znajdz_przestrzenie_nazw : 
+Funkcje_od_stringow.h(12)"->"dzielenie_na_slowa : 
+Funkcje_od_stringow.h(12)"->"usuwanie_tabulacji : 
+Funkcje_od_stringow.h(12)"->"odcinanie_koncowki : 
+Funkcje_od_stringow.h(12)"->"odcinanie_poczatku : 
+Graf.h(102)"->"znajdz_pliki : 
+Graf.h(102)"->"policz_linijki_kodu_dla_pliku : 
+Graf.h(102)"->"znajdz_polaczenia_pomiedzy_plikami : 
+Graf.h(102)"->"znajdz_definicje_funkcji : 
+Graf.h(102)"->"znajdz_funkcje_i_wagi_pomiedzy_plikami : 
+Graf.h(102)"->"znajdz_polaczenia_miedzy_funkcjami : 
+Graf.h(102)"->"znajdz_przestrzenie_nazw : 
+Graf.h(102)"->"znajdz_elementy_przestrzeni_nazw : 
+Graf.h(102)"->"przygotuj_txt_dla_plikow_do_visual_paradigma : 
+Graf.h(102)"->"przygotuj_txt_dla_funkcji_do_visual_paradigma : 
+Graf.h(102)"->"przygotuj_txt_dla_plikow_i_funkcji_do_visual_paradigma : 
+Graf.h(102)"->"string_dla_wszystkiego : 
+Graf.h(102)"->"zamien_na_string_dla_plikow_z_modulem_do_grafu : 
+Graf.h(102)"->"zamien_na_string_dla_modulu : 
+Graf.h(102)"->"string_dla_plikow_i_funkcji : 
+Graf.h(102)"->"zamien_na_string_dla_plikow_do_grafu : 
+Graf.h(102)"->"zamien_na_string_dla_funkcji_do_grafu : 
+Graf.h(102)"->"rysuj_graf : 
+menu.h(4)"->"menu : 
