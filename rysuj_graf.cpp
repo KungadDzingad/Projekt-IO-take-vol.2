@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include <cstdio>
 #include <cstdlib>
 #include <fstream>
@@ -15,7 +15,7 @@ void Graf::rysuj_graf(std::string do_rysowania_graphu, std::string nazwa_pliku) 
 
 
 
-	string sciezka = "C:\\Users\\wojte\\source\\repos\\IOnowy\\IOnowy\\release\\bin\\dot.exe";	//sciezka do pliku
+	string sciezka = "..\\graphviz-2.38\\release\\bin\\dot.exe";	//sciezka do pliku
 	string tymczasowy = "temp.dot";		//tworzy tymczasowy plik o nazwie temp.dot
 	string wyjscie = nazwa_pliku + ".png";			//koncowy plik o rozszerzeniu png
 	//D:\\STUDIA\\III_Semestr\\In¿ynieriaOprogramowania\\Grafmaster\\bin\\dot.exe

@@ -85,7 +85,17 @@ public:
 	//dla domyslnych jak std
 	void znajdz_elementy_przestrzeni_nazw();							//                 || -> Wojtek
 
+	//Zajmuja sie edycja danych by pasowaly one do visual paradigma
+	std::string przygotuj_txt_dla_plikow_do_visual_paradigma();//							   || -> Patryk B這niarz
+	std::string przygotuj_txt_dla_funkcji_do_visual_paradigma();//							   || -> Patryk B這niarz
+	std::string przygotuj_txt_dla_plikow_i_funkcji_do_visual_paradigma(string, string);//	   || -> Patryk B這niarz
+	
+	std::string string_dla_wszystkiego(string, string, string, string);
+	std::string zamien_na_string_dla_plikow_z_modulem_do_grafu();
+	std::string zamien_na_string_dla_modulu();							
+	std::string string_dla_plikow_i_funkcji(string,string);//							   || -> Patryk B這niarz	
 	std::string zamien_na_string_dla_plikow_do_grafu();  //                                || -> Matuesz Wicherski // Mateusz Witkowski
 	std::string zamien_na_string_dla_funkcji_do_grafu(); //do skopiowania i prxerobienia   || -> Matuesz Wicherski // Mateusz Witkowski
 	void rysuj_graf(std::string do_rysowania_grafu, std::string nazwa_pliku);//GOTOWE      || -> Matuesz Wich i Wojtek // Mateusz Witkowski
+
 };
