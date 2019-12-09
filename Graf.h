@@ -25,19 +25,7 @@ struct Funkcja {
 		nazwa_funkcji = a;
 		polaczenia_miedzy_funkcjami = {};
 	}
-};
-
-struct Plik {
-	std::string nazwa_pliku;
-	int ilosc_linijek_kodu;
-	std::vector<Polaczenie> polaczenia_miedzy_plikami;
-	std::vector<Funkcja> funkcje;
-	Plik(std::string a) {
-		nazwa_pliku = a;
-		polaczenia_miedzy_plikami = {};
-		funkcje = {};
-		ilosc_linijek_kodu = 0;
-	}
+	void znajdz_polaczone_funkcje(Funkcja sprawdzana_fun, std::fstream& otwarty_plik);
 };
 
 //struktura z namespaceami - nowa 16.11.2019
@@ -46,13 +34,37 @@ struct Modul {
 	std::vector<Funkcja> funkcje_modulu;
 	std::vector<std::string> elementy_modulu;
 	std::vector<Polaczenie> polaczenia_miedzy_namespaceami;
+	
 	Modul(std::string a) {
 		nazwa_przestrzeni = a;
 		funkcje_modulu = {};
 		elementy_modulu = {};
 		polaczenia_miedzy_namespaceami = {};
 	}
+	void znajdz_elementy_modulu(std::fstream&);
+	void znajdz_funkcje_w_module(std::string slowo);
+	void dodaj_niepowtarzajacy_sie_modul(std::string);
 };
+struct Plik {
+	std::string nazwa_pliku;
+	int ilosc_linijek_kodu;
+	std::vector<Polaczenie> polaczenia_miedzy_plikami;
+	std::vector<Funkcja> funkcje;
+	std::vector<Modul> namespacey;
+	Plik() {};
+	Plik(std::string a) {
+		nazwa_pliku = a;
+		polaczenia_miedzy_plikami = {};
+		funkcje = {};
+		namespacey = {};
+		ilosc_linijek_kodu = 0;
+	}
+	void znajdz_funkcje_w_pliku();
+	void zdefiniuj_nazwe_funkcji_z_modulu(std::string,std::string);
+	void dodaj_niepowtarzajaca_sie_funkcje(std::string nazwa);
+	void znajdz_moduly();
+};
+
 
 class Graf {
 public:
@@ -85,7 +97,17 @@ public:
 	//dla domyslnych jak std
 	void znajdz_elementy_przestrzeni_nazw();							//                 || -> Wojtek
 
+	//Zajmuja sie edycja danych by pasowaly one do visual paradigma
+	std::string przygotuj_txt_dla_plikow_do_visual_paradigma();//							   || -> Patryk B這niarz
+	std::string przygotuj_txt_dla_funkcji_do_visual_paradigma();//							   || -> Patryk B這niarz
+	std::string przygotuj_txt_dla_plikow_i_funkcji_do_visual_paradigma(string, string);//	   || -> Patryk B這niarz
+	
+	std::string string_dla_wszystkiego(string, string, string, string);
+	std::string zamien_na_string_dla_plikow_z_modulem_do_grafu();
+	std::string zamien_na_string_dla_modulu();							
+	std::string string_dla_plikow_i_funkcji(string,string);//							   || -> Patryk B這niarz	
 	std::string zamien_na_string_dla_plikow_do_grafu();  //                                || -> Matuesz Wicherski // Mateusz Witkowski
 	std::string zamien_na_string_dla_funkcji_do_grafu(); //do skopiowania i prxerobienia   || -> Matuesz Wicherski // Mateusz Witkowski
 	void rysuj_graf(std::string do_rysowania_grafu, std::string nazwa_pliku);//GOTOWE      || -> Matuesz Wich i Wojtek // Mateusz Witkowski
+
 };

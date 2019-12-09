@@ -6,10 +6,12 @@
 std::string Graf::zamien_na_string_dla_plikow_do_grafu()
 {
 	std::string strzala = "->";
-	std::string poczatek = "digraph G {";
+	std::string poczatek = "digraph G {\nbgcolor=\"#66cc99:#009966\"\n";
 	std::string temp;
 	std::string tekst;
-	//std::string liczba;
+	
+	std::string node = "node [shape=box fillcolor=\"orange:yellow\" style=\"filled\" gradientangle=120]\n"; //¿eby to ³adniej wygl¹da³o
+	std::string styl_strzalki = "[color=\"red\", penwidth = 2]";	//¿eby strzalki inny kolor mialy
 
 	std::ostringstream ss;	//plik.ilosc_linijek_kodu	
 	std::ostringstream ss2;	//dla obydwu
@@ -43,12 +45,12 @@ std::string Graf::zamien_na_string_dla_plikow_do_grafu()
 					std::string sila_polaczenia = ss3.str();
 					ss3.str("");
 					ss3.clear();
-					temp += "\"" + pliki[i].nazwa_pliku + "(" + ilosc_lini_pierwszego_pliku + ")\"" + strzala + "\"" + pliki[i].polaczenia_miedzy_plikami[j].nazwa_polaczonego_elementu + "(" + ilosc_linii_drugiego_pliku + ")\"" + "[ label = \"" + sila_polaczenia + "\" ];\n";
+					temp += "\"" + pliki[i].nazwa_pliku + "(" + ilosc_lini_pierwszego_pliku + ")\"" + strzala + "\"" + pliki[i].polaczenia_miedzy_plikami[j].nazwa_polaczonego_elementu + "(" + ilosc_linii_drugiego_pliku + ")\"" + "[ label = \"" + sila_polaczenia + "\" ]" + styl_strzalki + ";\n";
 					//std::cout << temp << endl;
 				}
 			}
 	}
-	tekst = poczatek + temp + "}";	//trzeba pamietac o zamknieciu nawiasu klamrowego
+	tekst = poczatek + node + temp + "}";	//trzeba pamietac o zamknieciu nawiasu klamrowego
 
 	//std::cout << tekst << endl;		//tescik
 	return tekst;

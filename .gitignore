@@ -1,0 +1,7 @@
+*.png
+temp.dot
+IOnowy.vcxproj
+IOnowy.vcxproj.filters
+IOnowy.vcxproj.user
+Debug/
+release/
