@@ -29,7 +29,7 @@
 		}
 	tekst = poczatek + temp + "}";		//zawsze zamykajcie nawiasy klamrowe :D
 
-	std::cout << tekst; 		//tescik
+	//std::cout << tekst; 		//tescik
 	return tekst;
 	}
 

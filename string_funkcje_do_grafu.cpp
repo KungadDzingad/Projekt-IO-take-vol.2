@@ -35,6 +35,6 @@ std::string Graf::zamien_na_string_dla_funkcji_do_grafu()
 
 	tekst = poczatek + node + temp + "}";		//zawsze zamykajcie nawiasy klamrowe :D
 
-	std::cout << tekst; 		//tescik
+	//std::cout << tekst; 		//tescik
 	return tekst;
 }

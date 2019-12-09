@@ -25,19 +25,7 @@ struct Funkcja {
 		nazwa_funkcji = a;
 		polaczenia_miedzy_funkcjami = {};
 	}
-};
-
-struct Plik {
-	std::string nazwa_pliku;
-	int ilosc_linijek_kodu;
-	std::vector<Polaczenie> polaczenia_miedzy_plikami;
-	std::vector<Funkcja> funkcje;
-	Plik(std::string a) {
-		nazwa_pliku = a;
-		polaczenia_miedzy_plikami = {};
-		funkcje = {};
-		ilosc_linijek_kodu = 0;
-	}
+	void znajdz_polaczone_funkcje(Funkcja sprawdzana_fun, std::fstream& otwarty_plik);
 };
 
 //struktura z namespaceami - nowa 16.11.2019
@@ -46,13 +34,37 @@ struct Modul {
 	std::vector<Funkcja> funkcje_modulu;
 	std::vector<std::string> elementy_modulu;
 	std::vector<Polaczenie> polaczenia_miedzy_namespaceami;
+	
 	Modul(std::string a) {
 		nazwa_przestrzeni = a;
 		funkcje_modulu = {};
 		elementy_modulu = {};
 		polaczenia_miedzy_namespaceami = {};
 	}
+	void znajdz_elementy_modulu(std::fstream&);
+	void znajdz_funkcje_w_module(std::string slowo);
+	void dodaj_niepowtarzajacy_sie_modul(std::string);
 };
+struct Plik {
+	std::string nazwa_pliku;
+	int ilosc_linijek_kodu;
+	std::vector<Polaczenie> polaczenia_miedzy_plikami;
+	std::vector<Funkcja> funkcje;
+	std::vector<Modul> namespacey;
+	Plik() {};
+	Plik(std::string a) {
+		nazwa_pliku = a;
+		polaczenia_miedzy_plikami = {};
+		funkcje = {};
+		namespacey = {};
+		ilosc_linijek_kodu = 0;
+	}
+	void znajdz_funkcje_w_pliku();
+	void zdefiniuj_nazwe_funkcji_z_modulu(std::string,std::string);
+	void dodaj_niepowtarzajaca_sie_funkcje(std::string nazwa);
+	void znajdz_moduly();
+};
+
 
 class Graf {
 public:

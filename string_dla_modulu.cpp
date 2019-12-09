@@ -24,6 +24,6 @@ std::string Graf::zamien_na_string_dla_modulu()
 		}
 	}
 	tekst = poczatek + node + temp + "}";
-	std::cout << tekst;
+	//std::cout << tekst;
 	return (tekst);
 }

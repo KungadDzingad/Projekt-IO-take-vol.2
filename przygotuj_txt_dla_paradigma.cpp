@@ -128,7 +128,7 @@ string Graf::przygotuj_txt_dla_plikow_i_funkcji_do_visual_paradigma(string pliki
 			polaczenia_miedzy_funkcjami_a_plikiami = polaczenia_miedzy_funkcjami_a_plikiami + temp;
 		}
 	}
-	cout << polaczenia_miedzy_funkcjami_a_plikiami << endl;
+	//cout << polaczenia_miedzy_funkcjami_a_plikiami << endl;
 
 	string scalone = pliki_txt + funkcje_txt + polaczenia_miedzy_funkcjami_a_plikiami;
 

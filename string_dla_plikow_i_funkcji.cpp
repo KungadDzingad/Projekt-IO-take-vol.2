@@ -31,7 +31,7 @@ string Graf::string_dla_plikow_i_funkcji(string pierwsza_czesc_stringa, string d
 			trzecia_czesc_stringa = trzecia_czesc_stringa + temp;
 		}
 	}
-	cout << trzecia_czesc_stringa << endl;
+	//cout << trzecia_czesc_stringa << endl;
 
 	string scalone = poczatek + pierwsza_czesc_stringa + druga_czesc_stringa + trzecia_czesc_stringa + "\n}";
 

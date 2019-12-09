@@ -26,7 +26,6 @@ int main() {
 	std::string do_txt_funkcje = program->przygotuj_txt_dla_funkcji_do_visual_paradigma();
 	std::string do_txt_pliki = program->przygotuj_txt_dla_plikow_do_visual_paradigma();
 	program->przygotuj_txt_dla_plikow_i_funkcji_do_visual_paradigma(do_txt_pliki, do_txt_funkcje);
-
 	
 	program->rysuj_graf(graf_pliki_funkcje, "graf_pliki_funkcje");
 	program->rysuj_graf(graf_pliki, "graf_plikow");
@@ -36,6 +35,6 @@ int main() {
 	menu();
 
 	delete program;
-	system("Pause");
+	
 	return 0;
 }
