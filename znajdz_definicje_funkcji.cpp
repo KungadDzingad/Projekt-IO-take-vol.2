@@ -18,10 +18,10 @@ void Graf::znajdz_definicje_funkcji() {
 				wszystkie_funkcje_we_wszystkich_plikach.push_back(_funkcja_pliku.nazwa_funkcji);
 			}
 		}
-		std::cout << _ktory_plik.nazwa_pliku << ": "<<std::endl;
+		/*std::cout << _ktory_plik.nazwa_pliku << ": "<<std::endl;
 		for (auto & _funkcja_pliku : _ktory_plik.funkcje) {
 			std::cout << "\t" << _funkcja_pliku.nazwa_funkcji << std::endl;
-		}
+		}*/
 	}
 
 	/*unsigned int licznik_spr = 0;
