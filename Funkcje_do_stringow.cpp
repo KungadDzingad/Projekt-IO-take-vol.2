@@ -14,7 +14,7 @@ namespace Wojtas {
 		}
 		slowa_linijki.push_back(linia);
 		return slowa_linijki;
-	}
+	 }
 
 	std::string odcinanie_koncowki(std::string slowo, std::string koncowka) {
 		if (slowo.find(koncowka) != std::string::npos) {

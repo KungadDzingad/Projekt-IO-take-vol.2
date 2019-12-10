@@ -51,7 +51,13 @@ struct Plik {
 	std::vector<Polaczenie> polaczenia_miedzy_plikami;
 	std::vector<Funkcja> funkcje;
 	std::vector<Modul> namespacey;
-	Plik() {};
+	Plik() {
+		nazwa_pliku = "";
+		polaczenia_miedzy_plikami = {};
+		funkcje = {};
+		namespacey = {};
+		ilosc_linijek_kodu = 0;
+	};
 	Plik(std::string a) {
 		nazwa_pliku = a;
 		polaczenia_miedzy_plikami = {};
