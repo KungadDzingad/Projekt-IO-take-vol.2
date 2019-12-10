@@ -7,7 +7,6 @@ Debug/
 release/
 Testy/Debug/
 Testy/x64
-Testy/.vs/
 Testy/Release
 Testy/IOProjekt.sln
 Testy/IOProjektTest/Debug/
@@ -15,3 +14,4 @@ Testy/IOProjektTest/Release/
 Testy/IOProjektTest/x64
 Testy/IOProjektTest/IOProjektTest.vcxproj
 Testy/IOProjektTest/IOProjektTest.vcxproj.user
+Testy/.vs/
