@@ -1,9 +1,9 @@
 #include "pch.h"
-#include "C:\Users\wojte\source\repos\IOnowy\IOnowy\Plik.cpp"
-#include "C:\Users\wojte\source\repos\IOnowy\IOnowy\Funkcje_do_Stringow.cpp"
-#include "C:\Users\wojte\source\repos\IOnowy\IOnowy\Funkcja.cpp"
-#include "C:\Users\wojte\source\repos\IOnowy\IOnowy\znajdz_definicje_funkcji.cpp"
-#include "C:\Users\wojte\source\repos\IOnowy\IOnowy\Modul.cpp"
+#include "..\..\Plik.cpp"
+#include "..\..\Funkcje_do_Stringow.cpp"
+#include "..\..\Funkcja.cpp"
+#include "..\..\znajdz_definicje_funkcji.cpp"
+#include "..\..\Modul.cpp"
 
 
 namespace PlikTest {

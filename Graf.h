@@ -116,4 +116,5 @@ public:
 	std::string zamien_na_string_dla_funkcji_do_grafu(); //do skopiowania i prxerobienia   || -> Matuesz Wicherski // Mateusz Witkowski
 	void rysuj_graf(std::string do_rysowania_grafu, std::string nazwa_pliku);//GOTOWE      || -> Matuesz Wich i Wojtek // Mateusz Witkowski
 
+	void wykonaj();
 };

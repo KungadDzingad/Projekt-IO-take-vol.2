@@ -6,7 +6,7 @@
 #pragma once
 
 #include "gtest/gtest.h"
-#include "C:\Users\wojte\source\repos\IOnowy\IOnowy\Graf.h"
+#include "..\..\Graf.h"
 
 
 namespace PlikTest{
